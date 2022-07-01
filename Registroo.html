@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+<body style="background-color:#C0AEF4">
+    <title>Registro de contacto</title>
+</head>
+<body>
+	<h1><i>Registro de contacto</i></h1>
+	<p>Gracias por registrarse, su informacion esta siendo procesada.....</p>
+	<form action="Registrado.html"methos="post">
+<fieldset>
+		<legend><i>Datos personales</i></legend>
+		<label for="formnom"><i>Nombre:</i></label><input type="text" name="nombrecliente" id="formnom">
+		</br>
+		<label for="formdir"><i>Direccion:</i></label><input type="text" name="direccioncliente" id="formdir">
+		</br>
+		<label for="formtel"><i>Telefono:</i></label><input type="text" name="telefonocliente" id="formtel">
+		</br>
+		<label for="formemail"><i>Correo electronico:</i><input type="email" name="emailcliente" id="formemail"></label>
+		</br>
+		<p><i>Describa entre que calles se ubica:</i></p>
+		<br>
+		<textarea name="descr" rows="5" cols="60" maxlength="200" id="form-story" placeholder="Maximo 200 caracteres"></textarea>
+	</fieldset>
+   <br>
+<p><input type="submit" value="Enviar"><input type="reset" value="Limpiar"></p> 
+</form>
+<fieldset>
+<legend><i>Información</i></legend>
+   <br>
+	<p><i>Carrera:</i><input type="text" list="listadocarreras" name="tipocarrera"></p>
+	<datalist id="listadocarreras">
+	<option value="Tecnologías de la Información">
+	<option value="Procesos Industriales">
+	<option value="Desarrollo de Negocios">
+	<option value="Terapia Física">
+	</datalist>
+	<p><i>Sexo:</i></p>
+	<ol>
+	<li><input type="radio" name="sexo" value="Hombre" checked> Hombre</li>
+	<li><input type="radio" name="sexo" value="Mujer"> Mujer</li>
+	</ol>
+	<p><i>Qué materia vas a cursar:</i></p>
+	<ultype="none">
+	<li><input type="checkbox" name= "materias" value= "Calculo" checked>Calculo</li>
+	<li><input type="checkbox" name= "materias" value= "Base de datos" checked>Base de datos</li>
+	<li><input type="checkbox" name= "materias" value= "Aplicaciones web">Aplicaciones web</li>
+	<li><input type="checkbox" name= "materias" value= "Probabilidad">Probabilidad</li>
+	<li><input type="checkbox" name= "materias" value= "Sistemas operativos">Sistemas operativos</li>
+	<li><input type="checkbox" name= "materias" value= "Sociocultural">Sociocultural</li>
+	</ul>
+		<label><i>Adjuntar una fotografía (opcional)</i></label><input type="file" name="foto">
+		<input type="file" name="foto">
+  <br>
+  </fieldset>
+  <fieldset>
+    <legend><i>Fechas de registro</i></legend>
+<br>
+<p><i>Fecha de registro:</i><input type= "date" name = "Date" value = "2022-06-08"></p>
+<br>
+<p><i>Hora de registro:</i><input type= "date" name = "Time" value = "12:45:38"></p>
+<br>
+<p><i>Fecha y hora de pago:</i><input type= "datetime-local" name = "Name" value = "2022-06-08: 12:42:38"></p>
+<br>
+<p><i>Mes de alta:</i><input type= "month" name = "name" value = "2022-06">
+<br>
+<p><i>Semana de inicio:</i><input type= "week" name = "name" value = "2022-W24">
+<br>
+</fieldset>
+<fieldset>
+  <legend><i>Comida</i></legend>
+<select name="comida" size="7" multiple>
+<optgroup label="Tradicional">
+	<option>Pizza</option>
+	<option>Hamburguesa</option>
+</optgroup>
+<optgroup label="extra">
+	<option>Tocino</option>
+	<option>Jalapeño</option>
+	<option>Carne</option>
+</optgroup>
+</select>
+<br>
+</fieldset>
+<fieldset>
+  <legend><i>Color favorito</i></legend>
+  <p><i>Color favorito</i>
+	<select name="colorfav">
+	<option>Rosa</option>
+	<option>Azul</option>
+	<option>Negro</option>
+	<option>Blanco</option>
+	<option>Verde</option>
+	<option>Rojo</option>
+	<option>Gris</option>
+	</select>
+  </p>
+  <br>
+  <p><i>Color favorito</i>
+	<select name="colorfav" size="5"multiple>
+	<option>Rosa</option>
+	<option>Azul</option>
+	<option selected>Negro</option>
+	<option>Blanco</option>
+	<option>Verde</option>
+	<option>Rojo</option>
+	<option>Gris</option>
+	</select>
+  </p>
+  <br>
+	<label><i>Cantidad de piezas</i>
+	<input type= "number" name= " piezas" min = "2" max= "6"> </label>
+  <br>
+	<label><i>Nivel de satisfacción (1 a 10)</i><input type="range" name= "satisf" min = "1" max= "10" step = "1">
+	</label>
+  <br>
+  <p><i>Color favorito</i></p><input type = "color">
+</fieldset>
+<br>
+<button type="button">Ir al menú principal</button>
+<br>
+<button><img src="ok.png" alt="Enviar" 
+width="25" heigh="35"></button>
+<br>
+<i>Porcentaje de la descarga:</i> <progres smax="100" id="fave">0</progress>
+<br>
+<meter min="0" max="100" name="volumen">50%</meter>
+<br>
+<formonsubmit= "regresa falso" oninput= 
+"o.value= a.valueAsNumber +
+b.valueAsNumber">
+<input name=a type=numberstep=any> 
++ <input name=b type=numberstep=any> =
+<outputname=o for="a b"></output>
+<p><input type="submit" value="Enviar"><input type="reset" value="Limpiar"></p>
+</form> 
+</body>
+</html>
